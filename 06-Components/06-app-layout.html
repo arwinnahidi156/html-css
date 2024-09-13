@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&family=Rubik:wght@300..900&display=swap" rel="stylesheet">
+
+  <title>App Layout</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+    font-family: "Roboto", sans-serif;
+    color: #343a40;
+    font-size: 24px;
+    display: grid;
+    grid-template-columns: 80px 400px 1fr 250px;
+    grid-template-rows: 80px 1fr;
+    height: 100vh;
+
+    }
+    nav {
+      background-color: #495057;
+      grid-row: 1/-1;
+
+    }
+    menu {
+      background-color: #7048e8;
+      color: #fff;
+      grid-column: 2/-1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+    }
+    section {
+      background-color: #e9ecef;
+    }
+
+    aside {
+      background-color: #e9ecef;
+    }
+
+    .right-side {
+      display: flex;
+      gap: 16px;
+    }
+
+    .anc:link, .anc:visited {
+      text-decoration: none;
+      padding: 5px 10px;
+      background-color: antiquewhite;
+      display: inline-block;
+      font-size: 16px;
+      
+      
+      
+      background-color: #845ef7;
+      color: #fff;
+    }
+
+    .anc:first-child {
+      margin-left: 12px;
+    }
+
+    .anc-left {
+      margin-right: 12px;
+    }
+
+    .anc:hover, .anc:active {
+      background-color: #5f3dc4;
+
+      
+    }
+
+    .anc-left:link, .anc-left:visited {
+      background-color: #fa5252;
+    }
+
+    .anc-left:hover, .anc-left:active {
+      background-color: #f03e3e;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      /* gap: 24px; */
+      align-items: center;
+
+    }
+
+    .email {
+      padding: 16px 68px;
+      background-color: #dee2e6;
+      font-weight: bold;
+      margin: 24px auto;
+      color: #343a40;
+
+    }
+
+    .email:link, .email:visited {
+      cursor: pointer;
+      text-decoration: none;
+      
+    }
+
+    .email:hover, .email:active {
+      background-color: #adb5bd;
+
+    }
+
+    
+
+
+    main {
+      font-weight: 600;
+      display: flex;
+      justify-content: center;
+    }
+
+    aside {
+      font-weight: 600;
+      display: flex;
+      justify-content: center;
+    }
+
+    
+
+    
+    
+    
+    
+  
+    
+  
+  </style>
+
+</head>
+<body>
+  
+    <nav>Nav</nav>
+    <menu>
+      <div class="right-side">
+
+        <a href="#" class="anc">New</a>
+        <a href="#" class="anc">Reply</a>
+        <a href="#" class="anc">Forward</a>
+        <a href="#" class="anc">Mark unread</a>
+      </div>
+      <a href="#" class="anc anc-left">Trash</a>
+      
+    </menu>
+    <section>
+      <a href="#" class="email">Email 1</a>
+      <a href="#" class="email">Email 2</a>
+      <a href="#" class="email">Email 3</a>
+      <a href="#" class="email">Email 4</a>
+      <a href="#" class="email">Email 5</a>
+      <a href="#" class="email">Email 6</a>
+
+      
+    </section>
+    <main>Email view</main>
+    <aside>Additional info</aside>
+    
+    
+
+  
+
+
+  
+</body>
+</html>
